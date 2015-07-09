@@ -1,0 +1,7 @@
+<h1>Insert a new model</h1>
+<%= form_for @bathroom, url: {action: "create"} do |f| %>
+  <%= f.text_field :name %>
+  <% bathroom_form.fields_for :features do |feature_fields| %>
+  <% end %>
+  <%= submit_tag 'Create' %>
+<% end %>
